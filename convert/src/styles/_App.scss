@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    @include Flex;
+    min-height: 100vh;
+    background-color: $BodyBackGround;
+}
+.convert {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.currency {
+    input {
+        padding: 10px 0px;
+        border-radius: 2px;
+        width: 10rem;
+        box-shadow: 0px 1px 20px 1px #bdd4d4;
+        // transform: translateX(59px);
+        // transition: .2s linear;
+        &:hover{
+            // transform: translateX(0px);
+        }
+        &:focus {
+            border-color: $tealColor;
+            border: 1px solid $tealColor;
+            outline: none;
+        }
+        &::placeholder {
+            padding: 10px;
+        }
+        &::-ms-value{
+            padding: 10px; 
+        }
+    }
+    select {
+
+
+        padding: 10px 0px;
+        border: 1px solid $tealColor;
+        option{
+            background-color: $whiteColor;
+            color: $tealColor;
+        }
+       
+    }
+}
+.same{
+    text-align: center;
+    padding: 2px 0px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $whiteColor;
+}
